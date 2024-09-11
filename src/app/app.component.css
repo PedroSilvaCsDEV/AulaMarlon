@@ -1,0 +1,10 @@
+.dark{
+    color: white;
+    background: rgb(50, 50 , 50);
+    border: 2px solid black;
+}
+.light{
+    color: black;
+    background: antiquewhite;
+    border: 2px solid rgb(200, 200, 200)
+}
