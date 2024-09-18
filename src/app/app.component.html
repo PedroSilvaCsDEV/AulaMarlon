@@ -30,4 +30,19 @@
   </select>
   <p [class]="tema">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nihil sapiente maiores ut animi tempora facere doloremque inventore deserunt, dolorum excepturi eius quo architecto officia maxime amet doloribus impedit possimus.</p>
 </article>
-<home></home>
+<article>
+  <input type="text" #cor (keyup.enter)="mudaCor(cor.value)">
+  <input type="text" #fonte (keyup.enter)="mudaFonte(fonte.value)">
+  <input type="text" #tamanho (keyup.enter)="mudaTamanho(tamanho.value)">
+<p
+[style.color]="guardaCor"
+[style.fontFamily]="guardaFonte"
+[style.font-size]="guardaTamanho"
+>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis corporis fuga iste maxime numquam, voluptatum labore inventore excepturi optio cumque eveniet dolorem a blanditiis reprehenderit incidunt dolores consectetur, consequuntur repellat?</p>
+</article>
+<article>
+  <!---Objeto de Evento-->
+<input type="text" (keypress)="enxerga($event)">
+</article>
+<app-header></app-header>
+<app-main></app-main>

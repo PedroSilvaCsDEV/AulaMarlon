@@ -38,4 +38,21 @@ export class AppComponent {
     console.log(value);
     this.tema = value;
   }
+  guardaCor = ""
+  mudaCor(value:string){
+    this.guardaCor = value;
+  }
+  guardaFonte = ""
+  mudaFonte(value:string){
+    this.guardaFonte = value;
+  }
+  guardaTamanho = ""
+  mudaTamanho(value:string){
+    this.guardaTamanho = value;
+  }
+  //Objeto de evento
+
+  enxerga(value:any){
+    console.log(value.target.value);
+  }
 }
